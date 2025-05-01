@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>The Problem - Data Justice</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+img.responsive {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar primary w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large primary" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="problem.html" class="w3-bar-item w3-button w3-padding-large w3-white">The Problem</a>
+    <a href="solution1.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Possible Solution 1</a>
+    <a href="solution2.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Possible Solution 2</a>
+    <a href="impact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Impact</a>
+    <a href="works.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Works Cited</a>
+  </div>
+
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="problem.html" class="w3-bar-item w3-button w3-padding-large">The Problem</a>
+    <a href="solution1.html" class="w3-bar-item w3-button w3-padding-large">Possible Solution 1</a>
+    <a href="solution2.html" class="w3-bar-item w3-button w3-padding-large">Possible Solution 2</a>
+    <a href="impact.html" class="w3-bar-item w3-button w3-padding-large">Impact</a>
+    <a href="works.html" class="w3-bar-item w3-button w3-padding-large">Works Cited</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container primary w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">THE PROBLEM</h1>
+</header>
+
+<!-- Content Section with Image -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content w3-center">
+      <h5 class="w3-padding-32">
+        Generative AI requires large datasets and immense computing power to operate. This can lead to significant environmental impacts, especially due to the energy consumption of training large language models and the cooling requirements for data centers.
+      </h5>
+  
+      <img src="assets/problem_img.png" alt="Environmental Impact" style="width: 70%; margin-top: 32px;">
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <p>Powered by Katherine Hall, Autumn Anson, Priyanka Meduri, and Rye Strand</p>
+</footer>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
