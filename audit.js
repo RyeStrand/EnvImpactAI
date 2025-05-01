@@ -90,22 +90,22 @@ async function audit() {
       theta = sigma^2/mu = 2.25
   3. Total energy consumtion (joules) = Loading time (seconds) * power (watts)
   4. Chat GPT query energy consumtion also follows a gamma distribution with:
-      mean (mu) = 1080 joules
+      mean (mu) = 1800 joules
       variance (sigma^2) = 800
 
       Therefore,
-      alpha = 1.82
-      theta = 593
+      alpha = 5.06
+      theta = 356
 
   */
-  let n = 1;
+  let n = 25;
   let confidence = .9;
   
   let times = await cpuTimes(n);
 
   let cpu_gamma_vals = await getGammaSamples(1.78, 2.25, n);
   
-  let query_gamma_vals = await getGammaSamples(1.82, 593, n);
+  let query_gamma_vals = await getGammaSamples(5.06, 356, n);
 
   let ratios = query_gamma_vals.map((val, i) => val / (times[i] * cpu_gamma_vals[i]))
 
