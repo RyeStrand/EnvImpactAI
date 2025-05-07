@@ -137,3 +137,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-light-grey{color:#000!important;background-color:#f1f1f1!important}
 .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
 .w3-text-grey{color:#757575!important}
+
+/* number at the bottom*/
+.number{color: #1fa61b!important; text-decoration: underline;}
